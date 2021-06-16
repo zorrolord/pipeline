@@ -9,10 +9,10 @@ mono: none
 dotnet: 5.0.301
 
 before_script:
-  -set -e
-  -dotnet restore
+  - set -e
+  - dotnet restore
 
 script:
-  -dotnet build -c Release
+  - dotnet build -c Release
 
 
