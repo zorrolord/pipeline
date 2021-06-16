@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Zorrolord</RootNamespace>
+    <AssemblyName>Zorrolord.Model.$(MSBuildProjectName)</AssemblyName>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+
+    <Title>$(MSBuildProjectName)</Title>
+    <Authors>Zorrolord</Authors>
+    <Company>Zorrolord Engineering</Company>
+    <Copyright>(c) 2021 Zorrolord</Copyright>
+
+    <PackageProjectUrl>https://github.com/zorrolord/pipeline</PackageProjectUrl>
+    <PackageTags>person, model</PackageTags>
+    <Version>1.0.0</Version>
+    <Description>Model for Person containing first and lastname</Description>
+
+    <PackageId>Zorrolord.Model.Person</PackageId>
+
+    <RepositoryUrl>https://github.com/zorrolord/pipeline.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+
+
+</Project>
