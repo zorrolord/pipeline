@@ -13,6 +13,10 @@ before_script:
   - dotnet restore
 
 script:
+  - set -e
   - dotnet build -c Release
+  - |
+    dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:Exclude="[xunit*]*" /p:excludebyfile="**/*.Designer.cs"
+    bash <(curl -s https://codecov.io/bash) -Z
 
 
