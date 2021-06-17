@@ -64,7 +64,6 @@ namespace PersonLibTest
             Exception ex = Assert.Throws<Exception>(() => p = new(firstName, lastName));
 
             Assert.Equal(message, ex.Message);
-
         }
     }
 }
